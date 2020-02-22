@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [ $# -lt 2 ] 
+then
+  echo "/*********************************"
+  echo " * Name    : Shubham Kumar       *"
+  echo -n " * Date    : "
+  echo -n `date | awk '{print $1, $2, $3, $6}' `
+  echo "     *"
+  echo " * Reg No. : 2017CA14            *"
+  echo " * Sub     :    *" 
+  echo " * Ques No.:    *"
+  echo " *                               *"
+  echo " *********************************/"
+fi
+
+if [ $# -ge 2 ] 
+then
+  echo "/*********************************"
+  echo " * Name    : Shubham Kumar       *"
+  echo -n " * Date    : "
+  echo -n `date | awk '{print $1, $2, $3, $6}' `
+  echo "     *"
+  echo " * Reg No. : 2017CA14            *"
+  echo " * Sub     : $1  *" 
+  echo " * Ques No.: $2  *"
+  echo " *                               *"
+  echo " *********************************/"
+fi

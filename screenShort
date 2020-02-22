@@ -1,0 +1,2 @@
+#!/bin/bash
+eog "$HOME/Pictures/`ls ~/Pictures/ | grep Screen | sort -n | tail -n 1`"

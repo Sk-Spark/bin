@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo -n " Battery Status:     "
+while true 
+do
+sta=$(echo `btry | cut -d: -f 2 | grep %`)
+echo -ne "\b\b\b\b$sta "
+
+
+if [ "$sta" == "100%" ]
+then
+  echo "full"
+  espeak "Battery charged completely. Please remove charging."
+  sleep 5
+fi
+
+sleep 5
+
+done

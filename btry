@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -i percentage | cut -d: -f2
+
+upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -i percentage
+upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -i state

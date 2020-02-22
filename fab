@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# To print Fabonacci series
+#clear
+num=0
+i=0
+j=1
+k=0
+echo -n "Enter a length of serise: "
+read num
+echo -n "0"
+echo -n ", 1"
+num=`expr $num - 2`
+while test $num -gt 0
+do
+  k=`expr $i + $j`
+  echo -n ", $k"
+  i=$j
+  j=$k
+  num=`expr $num - 1`
+done 
+echo " "

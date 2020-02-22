@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sensors | head -n 6 | tail -n 4
+echo ""
+sensors | tail -n 9 | head -n 4
+echo ""
+
